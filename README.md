@@ -25,12 +25,12 @@ Goals include -
 * Commit code work to github regularly to demonstrate the time given to the project and the many different stages of change  
 * Attach relevant graphs, photos and other files to github repository to form part of the project  
 
-##Introduction to the Iris Data Set and Linear Data Analysis
-ref: https://en.wikipedia.org/wiki/Iris_flower_data_set
-ref: http://www.ias.ac.in/article/fulltext/reso/002/09/0032-0037
-ref: https://pdfs.semanticscholar.org/1ab8/ea71fbef3b55b69e142897fadf43b3269463.pdf
-ref: https://www.youtube.com/watch?v=azXCzI57Yfc
-
+##Introduction to the Iris Data Set and Linear Data Analysis  
+ref: https://en.wikipedia.org/wiki/Iris_flower_data_set  
+ref: http://www.ias.ac.in/article/fulltext/reso/002/09/0032-0037  
+ref: https://pdfs.semanticscholar.org/1ab8/ea71fbef3b55b69e142897fadf43b3269463.pdf  
+ref: https://www.youtube.com/watch?v=azXCzI57Yfc  
+  
 Sir Ronald Aylmer Fisher (17 February 1890 – 29 July 1962),  was a British statistician and geneticist. Over the course of his career he made substantial contributions to genetics and statistical science. Many consider Fisher as the man who laid the foundations of statistics as a science.
 Fisher developed a linear discriminant model to distinguish between three species of Iris using a data set collected by Edgar Anderson.
 Fifty samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor) were collected. Four attributes were measured from each sample: sepal length, sepal width, petal length and petal width, all in centimetres.  
