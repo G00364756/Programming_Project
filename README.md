@@ -4,10 +4,10 @@ Name:                Aidan O'Connor
 GMIT student number: G00364756
 Created:             22/03/2018
 
-##Background of Project:
-This project is part of the Programming Module for the Data ANalytics course offered by the Galway-Mayo Institute of Technology, taught by Dr. Ian McGloughlin. The aim of this project is to investigate the data set known as the "iris data set", created by Sir Ronald Aylmer Fisher, with the Python programming language, based on research conducted into the value that can be gained from the data set with respect to data analytics. In doing so, I hope to demonstrate my proficiency in project management, programming, research and demonstrating work to others who may be unfamiliar with the material.
+## Background of Project:  
+This project is part of the Programming Module for the Data Analytics course offered by the Galway-Mayo Institute of Technology, taught by Dr. Ian McGloughlin. The aim of this project is to investigate the data set known as the "iris data set", created by Sir Ronald Aylmer Fisher, with the Python programming language, based on research conducted into the value that can be gained from the data set with respect to data analytics. In doing so, I hope to demonstrate my proficiency in project management, programming, research and demonstrating work to others who may be unfamiliar with the material.
 
-##Project Plan:
+## Project Plan:
 
 1. Research  
 Goals include -  
@@ -25,7 +25,7 @@ Goals include -
 * Commit code work to github regularly to demonstrate the time given to the project and the many different stages of change  
 * Attach relevant graphs, photos and other files to github repository to form part of the project  
 
-##Introduction to the Iris Data Set and Linear Data Analysis  
+## Introduction to the Iris Data Set and Linear Data Analysis  
 ref: https://en.wikipedia.org/wiki/Iris_flower_data_set  
 ref: http://www.ias.ac.in/article/fulltext/reso/002/09/0032-0037  
 ref: https://pdfs.semanticscholar.org/1ab8/ea71fbef3b55b69e142897fadf43b3269463.pdf  
