@@ -9,12 +9,12 @@ This project is part of the Programming Module for the Data ANalytics course off
 
 ##Project Plan:
 
-1. Research 
+1. Research  
 Goals include - 
-> Investigating what the data set contains
-> The background behind the creation of the data set
-> The relevance and importance of the data set to data analytics
-> Possible analysis that can be done to the data set
+> Investigating what the data set contains  
+> The background behind the creation of the data set  
+> The relevance and importance of the data set to data analytics  
+> Possible analysis that can be done to the data set  
 
 2. Creating code to analyse the data set
 Goals include - 
