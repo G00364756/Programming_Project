@@ -6,11 +6,11 @@
 # Adapted from code learned from lectures by Dr. Ian McGlouglin.
 
 #This code splits the data set into the 3 different classes of iris and find the maximum sepal length for each class
+
 Ace=[]
 King=[]
 Queen=[]
 Jack=[]
-
 with open("Data_sets/iris.csv") as f:
     for line in f:  
         Ace.append(line.split(","))
