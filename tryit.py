@@ -11,7 +11,7 @@ def splitSetosa(x):
     """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
     Dataset=[]
     Setosa=[]
-    with open("Data_sets/iris.csv") as f:
+    with open("iris.csv") as f:
         for line in f:  
             Dataset.append(line.split(","))
         for x in range(len(Dataset)):
@@ -27,7 +27,7 @@ def splitVersicolor(x):
     """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
     Dataset=[]
     Versicolor=[]
-    with open("Data_sets/iris.csv") as f:
+    with open("iris.csv") as f:
         for line in f:  
             Dataset.append(line.split(","))
         for x in range(len(Dataset)):
@@ -44,7 +44,7 @@ def splitVirginica(x):
     """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
     Dataset=[]
     Virginica=[]
-    with open("Data_sets/iris.csv") as f:
+    with open("iris.csv") as f:
         for line in f:  
             Dataset.append(line.split(","))
         for x in range(len(Dataset)):
@@ -81,7 +81,7 @@ def maxSetosavalue(x):
             pass
     else:
         pass
-print(maxSetosavalue(0))
+
 
 def maxVersicolorvalue(x):
     Minnie = []
@@ -127,3 +127,9 @@ def maxVirginicavalue(x):
             return(('{}{}{}'.format("The maximum petal width for the Iris-Virginica class is ", maximumvalue, "cm")))
         else:
             pass
+
+print(maxSetosavalue(2))
+print(maxVersicolorvalue(2))
+print(maxVirginicavalue(2))
+
+
