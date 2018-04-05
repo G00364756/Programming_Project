@@ -45,7 +45,7 @@ Fisher's Linear Discriminant Analysis (LDA) is used to find a linear combination
 [6]: http://scikit-learn.org/stable/auto_examples/decomposition/plot_pca_vs_lda.html#sphx-glr-auto-examples-decomposition-plot-pca-vs-lda-py
 [7]: https://en.wikipedia.org/wiki/Standard_deviation
 [8]: https://betterexplained.com/articles/how-to-analyze-data-using-the-average/
-[9] https://www.mathsisfun.com/data/frequency-grouped-mean-median-mode.html
+[9]: https://www.mathsisfun.com/data/frequency-grouped-mean-median-mode.html
 
 1. Split data by class
 
