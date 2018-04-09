@@ -79,7 +79,7 @@ The mode is another very effective analysis tool. The mode is the most common nu
 
 6. Identify the standard deviation of the attributes for each class.
 
-In statistics, the standard deviation is a measure that is used to quantify the amount of variation or dispersion of a set of data values. A low standard deviation indicates that the data points tend to be close to the mean of the set, while a high standard deviation indicates that the data points are spread out over a wider range of values. The standard deviation of a random variable, statistical population, data set, or probability distribution is the square root of its variance.[7]
+The standard deviation is a measure of the amount of variation or dispersion of a set of data values. A low standard deviation indicates that the data points tend to be close to the mean of the set, while a high standard deviation indicates that the data points are spread out over a wider range of values. The standard deviation of a random variable, statistical population, data set, or probability distribution is the square root of its variance.[7]
 
 7. Principal Component Analysis (PCA)
 
@@ -88,9 +88,12 @@ Principal Component Analysis (PCA) applied to this data identifies the combinati
 8. Linear Discriminant Analysis (LDA)
 Linear Discriminant Analysis (LDA) tries to identify attributes that account for the most variance between classes. In particular, LDA, in contrast to PCA, is a supervised method, using known class labels.
 
-9. Compare attributes for each class with a graph plotted through python.
+9. Plot graphs
 
-## 
+Compare attributes for each class with a graph plotted for each of the analysis methods described.
+
+## Decision of the analysis that will be conducted on this data set
+Due to the limit
 
 
 
