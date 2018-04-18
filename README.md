@@ -112,7 +112,7 @@ Based on conducted research the decision was made to exclude no. 7 Principle Com
 ## Python code for the deliverables of this project
 Below is a list of the python files, within the project repository on Github, developed to output the deliverables already identified in the decision making stage of this document.
 
-####list.py :-####
+####list.py :-
 1st attempt at deliverable 1
 
 This code asks the user which column of data they wish to split into a separate list, once the user enters their selection the code executes and outputs the resulting list to the terminal. This is code that was developed initially while experimenting on how to get the deliverable "Split data into class".
@@ -168,11 +168,12 @@ list.py results in a specified column of the iris.csv data file being outputted 
 max_iris.py results:
 
 
-First Header  | Second Header | First Header  | Second Header |
+Attribute     | Setosa        | Versicolor    | Verginica     |
 ------------- | ------------- |-------------- | ------------- |
-Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-
+Sepal_length  | 5.8cm         | 7.0cm         | 7.9cm         |
+Sepal_width   | 4.4cm         | 3.4cm         | 3.8cm         |
+Petal_length  | 1.9cm         | 5.1cm         | 6.9cm         |
+Petal_width   | 0.6cm         | 1.8cm         | 2.5cm         |
 
 
 *Sepal_length - 
