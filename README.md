@@ -112,52 +112,52 @@ Based on conducted research the decision was made to exclude no. 7 Principle Com
 ## Python code for the deliverables of this project
 Below is a list of the python files, within the project repository on Github, developed to output the deliverables already identified in the decision making stage of this document.
 
-#### list.py :-
+### list.py
 1st attempt at deliverable 1
 
 This code asks the user which column of data they wish to split into a separate list, once the user enters their selection the code executes and outputs the resulting list to the terminal. This is code that was developed initially while experimenting on how to get the deliverable "Split data into class".
 
-####type.py####
+### type.py
 2nd attempt at deliverable 1 and 2 combined
 
 This code splits the the data up into Iris class then it find the maximum value of a predetermined attribute. No user input in this code. Changes made subsequently to make code more user interactive as can be seen in max_iris.py
 
-####test1.py####
+### test1.py
 1st attempt at deliverable 6
 
 This code was developed to test code that was to be inserted into mode.py pending satisfactory performance in tests.
 
-####tryit.py####
+### tryit.py
 1st attempt at deliverable 2
 
 This code was developed to give the maximum value for an attribute for each class of Iris. This code was subsequently built on to plot a graph which can be observed in max_iris.py
 
-####max_iris.py :-####
+### max_iris.py
 Deliverable 1,2 and 7 addressed with this code
 
 This code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the maximum value, for the user specified attribute, for each Iris class, as a bar chart.
 
-####min_iris.py :-####
+### min_iris.py
 Deliverable 1,3 and 7 addressed with this code
 
 Adapted from max_iris.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the minimum value, for the user specified attribute, for each Iris class, as a bar chart.
 
-####mean.py :-#### 
+### mean.py
 Deliverable 1,4 and 7 addressed with this code
 
 Adapted from max_iris.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the mean, for the user specified attribute, for each Iris class, as a bar chart.
 
-####mode.py :-####
+### mode.py
 Deliverable 1,5 and 7 addressed with this code
 
 Adapted from mean.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the mode, for the user specified attribute, for each Iris class, as a bar chart.
 
-####stnddev.py :-####
+### stnddev.py
 Deliverable 1,6 and 7 addressed with this code
 
 Adapted from mean.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the standard deviation, for the user specified attribute, for each Iris class, as a bar chart.
 
-####Note: All deliverables are met with the above python files####
+### Note: All deliverables are met with the above python files
 
 ## Analysis Results
 
