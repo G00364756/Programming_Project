@@ -3,6 +3,7 @@ Project work for the Programming Module (Data Analytics)
 Name:                Aidan O'Connor
 GMIT student number: G00364756
 Created:             22/03/2018
+Due date:            29/04/2018
 
 ## Background of Project:  
 This project is part of the Programming Module for the Data Analytics course offered by the Galway-Mayo Institute of Technology, taught by Dr. Ian McGloughlin. The aim of this project is to investigate the data set known as the "iris data set", created by Sir Ronald Aylmer Fisher, with the Python programming language, based on research conducted into the value that can be gained from the data set with respect to data analytics. In doing so, I hope to demonstrate my proficiency in project management, programming, research and demonstrating work to others who may be unfamiliar with the material.
@@ -25,7 +26,8 @@ Goals include -
 * Commit code work to github regularly to demonstrate the time given to the project and the many different stages of change  
 * Attach relevant graphs, photos and other files to github repository to form part of the project  
 
-## Introduction to the Iris Data Set and Linear Data Analysis  
+## Introduction to the Iris Data Set and Linear Data Analysis
+#### Refernces 
 [1]: https://en.wikipedia.org/wiki/Iris_flower_data_set  
 [2]: http://www.ias.ac.in/article/fulltext/reso/002/09/0032-0037  
 [3]: https://pdfs.semanticscholar.org/1ab8/ea71fbef3b55b69e142897fadf43b3269463.pdf  
@@ -42,6 +44,7 @@ Fisher's Linear Discriminant Analysis (LDA) is used to find a linear combination
 LDA becomes more valuable in separating classes as more attributes are necessary to be used in a dataset (e.g. can't clearly discriminate between cured people and not cured people in analysing gene X and gene Y, need to analyse more genes, new anlysis contains 20 genes, the use of more genes and LDA makes the discrimination more clear). [3],[4]
 
 ## Identification of analysis that can be done to the data set
+#### References:
 [5]: https://www.mathsisfun.com/data/standard-deviation.html
 [6]: http://scikit-learn.org/stable/auto_examples/decomposition/plot_pca_vs_lda.html#sphx-glr-auto-examples-decomposition-plot-pca-vs-lda-py
 [7]: https://en.wikipedia.org/wiki/Standard_deviation
@@ -96,7 +99,7 @@ Compare attributes for each class with a graph plotted for each of the analysis 
 ## Decision of the analysis that will be conducted on this data set
 The analysis methods that will be conducted as part of this project will be the following:
 
-Deliverables
+#### Deliverables
 1. Split data by class
 2. Maximum value comparison
 3. Minimum value comparison
@@ -109,7 +112,7 @@ All the analysis methods will be built from the ground up from knowledge gained 
 
 Based on conducted research the decision was made to exclude no. 7 Principle Component Analysis and no. 8 Linear Discriminant Analysis methods from the project. From research it would appear that building code for both methods from the ground up would be extremely time consuming unless using powerful tools like "numpy" or "pandas". Pre-built code has been identified from sources on the Github application, which could be implimented to conduct the PCA and LDA analysis methods however there is no benefit in using this pre-built code. The aim of this project is to demonstrate the student's proficiency with python from what has been learned so fat, and also to demonstrate project management skills. Excluding the PCA and LDA methods means that the deliverables numbered 1-7 above will be met within the timeframe of the project and will be done with the project aims in mind (i.e. demonstration of learnings).
 
-## Python code for the deliverables of this project
+## Python code files
 Below is a list of the python files, within the project repository on Github, developed to output the deliverables already identified in the decision making stage of this document.
 
 ### list.py
@@ -159,11 +162,21 @@ Adapted from mean.py, this code uses a number of defined functions to produce it
 
 ### Note: All deliverables are met with the above python files
 
-## Analysis Results
+## Investigative Analysis Results
 
 Please find screen captures of the outputs of all executed python code as described in the previous section of this READme file.
 
-list.py results in a specified column of the iris.csv data file being outputted as a list. Please see the following screencaptures for demonstration of the result:-
+### list.py 
+
+Please see the following screencaptures for demonstration of the result:-
+
+### test1.py 
+
+Please see the following screencaptures for demonstration of the result:-
+
+### tryit.py 
+
+Please see the following screencaptures for demonstration of the result:- 
 
 ### max_iris.py results:
 
@@ -210,10 +223,7 @@ Sepal_width   | 0.4cm         | 0.3cm         | 0.3cm         |
 Petal_length  | 0.2cm         | 0.5cm         | 0.5cm         |
 Petal_width   | 0.1cm         | 0.2cm         | 0.3cm         |
 
+## Summary of investigations
 
-
-
-## Final word
-I hope that this READme file,the python files and other documentation included in the project repository demonstrates my project management skills and also demonstrates my abilities with python programming.
 
 ## End
