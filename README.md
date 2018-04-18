@@ -38,7 +38,8 @@ The Iris data set is aphiliated with both Anderson and Fisher. The reason Edgar 
 
 Fifty samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor) were collected. Four attributes were measured from each sample: sepal length, sepal width, petal length and petal width, all in centimetres. [2]
 
-Fisher's Linear Discriminant Analysis (LDA) is used to find a linear combination of features which characterizes or separates two or more classes of objects or events. This can be extremely useful in everyday life. For instance if the pharamceutical company are trialling a new type of drug to fight a certain disease, and they wish to know what type of people the drug helps cure and what type of people the drug does not help cure, then the use of LDA can aid the pharaceutical company in discriminating between these two classes of people (i.e. class1 = drug helps cure, class2 = drug does not help cure). In doing so they can better determine what types of people should take the drug and what type of people shouldn't. LDA becomes more valuable in separating classes as more attributes are necessary to be used in a dataset (e.g. can't clearly discriminate between cured people and not cured people in analysing gene X and gene Y, need to analyse more genes, new anlysis contains 20 genes, the use of more genes and LDA makes the discrimnation more clear). [3],[4]
+Fisher's Linear Discriminant Analysis (LDA) is used to find a linear combination of features which characterizes or separates two or more classes of objects or events. This can be extremely useful in everyday life. For instance if the pharamceutical company are trialling a new type of drug to fight a certain disease, and they wish to know what type of people the drug helps cure and what type of people the drug does not help cure, then the use of LDA can aid the pharaceutical company in discriminating between these two classes of people (i.e. class1 = drug helps cure, class2 = drug does not help cure). In doing so they can better determine what types of people should take the drug and what type of people shouldn't. 
+LDA becomes more valuable in separating classes as more attributes are necessary to be used in a dataset (e.g. can't clearly discriminate between cured people and not cured people in analysing gene X and gene Y, need to analyse more genes, new anlysis contains 20 genes, the use of more genes and LDA makes the discrimination more clear). [3],[4]
 
 ## Identification of analysis that can be done to the data set
 [5]: https://www.mathsisfun.com/data/standard-deviation.html
@@ -93,9 +94,126 @@ Linear Discriminant Analysis (LDA) tries to identify attributes that account for
 Compare attributes for each class with a graph plotted for each of the analysis methods described.
 
 ## Decision of the analysis that will be conducted on this data set
-Due to the limit
+The analysis methods that will be conducted as part of this project will be the following:
+
+Deliverables
+1. Split data by class
+2. Maximum value comparison
+3. Minimum value comparison
+4. Mean value comparison
+5. Mode value comparison
+6. Identification of the standard deviation of an attribute for each class
+7. Plot graphs
+
+All the analysis methods will be built from the ground up from knowledge gained through studying course notes from the Data Analytics Programming module and learnings from external sources on the world wide web.
+
+Based on conducted research the decision was made to exclude no. 7 Principle Component Analysis and no. 8 Linear Discriminant Analysis methods from the project. From research it would appear that building code for both methods from the ground up would be extremely time consuming unless using powerful tools like "numpy" or "pandas". Pre-built code has been identified from sources on the Github application, which could be implimented to conduct the PCA and LDA analysis methods however there is no benefit in using this pre-built code. The aim of this project is to demonstrate the student's proficiency with python from what has been learned so fat, and also to demonstrate project management skills. Excluding the PCA and LDA methods means that the deliverables numbered 1-7 above will be met within the timeframe of the project and will be done with the project aims in mind (i.e. demonstration of learnings).
+
+## Python code for the deliverables of this project
+Below is a list of the python files, within the project repository on Github, developed to output the deliverables already identified in the decision making stage of this document.
+
+####list.py :-####
+1st attempt at deliverable 1
+
+This code asks the user which column of data they wish to split into a separate list, once the user enters their selection the code executes and outputs the resulting list to the terminal. This is code that was developed initially while experimenting on how to get the deliverable "Split data into class".
+
+####type.py####
+2nd attempt at deliverable 1 and 2 combined
+
+This code splits the the data up into Iris class then it find the maximum value of a predetermined attribute. No user input in this code. Changes made subsequently to make code more user interactive as can be seen in max_iris.py
+
+####test1.py####
+1st attempt at deliverable 6
+
+This code was developed to test code that was to be inserted into mode.py pending satisfactory performance in tests.
+
+####tryit.py####
+1st attempt at deliverable 2
+
+This code was developed to give the maximum value for an attribute for each class of Iris. This code was subsequently built on to plot a graph which can be observed in max_iris.py
+
+####max_iris.py :-####
+Deliverable 1,2 and 7 addressed with this code
+
+This code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the maximum value, for the user specified attribute, for each Iris class, as a bar chart.
+
+####min_iris.py :-####
+Deliverable 1,3 and 7 addressed with this code
+
+Adapted from max_iris.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the minimum value, for the user specified attribute, for each Iris class, as a bar chart.
+
+####mean.py :-#### 
+Deliverable 1,4 and 7 addressed with this code
+
+Adapted from max_iris.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the mean, for the user specified attribute, for each Iris class, as a bar chart.
+
+####mode.py :-####
+Deliverable 1,5 and 7 addressed with this code
+
+Adapted from mean.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the mode, for the user specified attribute, for each Iris class, as a bar chart.
+
+####stnddev.py :-####
+Deliverable 1,6 and 7 addressed with this code
+
+Adapted from mean.py, this code uses a number of defined functions to produce its output.  The code asks the user for an input initially. This input corresponds to an attribute for each Iris class. The user inserts their preference and the code executes fully. The code will plot a graph of the standard deviation, for the user specified attribute, for each Iris class, as a bar chart.
+
+####Note: All deliverables are met with the above python files####
+
+## Analysis Results
+
+Please find screen captures of the outputs of all executed python code as described in the previous section of this READme file.
+
+list.py results in a specified column of the iris.csv data file being outputted as a list. Please see the following screencaptures for demonstration of the result:-
+
+max_iris.py results:
+
+
+First Header  | Second Header | First Header  | Second Header |
+------------- | ------------- |-------------- | ------------- |
+Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+
+
+
+*Sepal_length - 
+    *The maximum sepal length for Iris Setosa is 5.8cm
+    *The maximum sepal length for Iris Versicolor is 7.0cm
+    *The maximum sepal length for Iris Verginica is 7.9cm
+*Sepal_width - 
+    *The maximum sepal length for Iris Setosa is 5.8cm
+    *The maximum sepal length for Iris Versicolor is 7.0cm
+    *The maximum sepal length for Iris Verginica is 7.9cm
+*Petal_Height - 
+*Petal_Width - 
+
+*min_iris.py results:
+*Sepal_length - 
+*Sepal_width - 
+*Petal_Height - 
+*Petal_Width - 
+
+mean.py results:
+Sepal_length - 
+Sepal_width - 
+Petal_Height - 
+Petal_Width - 
+
+mode.py results:
+Sepal_length - 
+Sepal_width - 
+Petal_Height - 
+Petal_Width - 
+
+stddev.py results:
+Sepal_length - 
+Sepal_width - 
+Petal_Height - 
+Petal_Width - 
 
 
 
 
+## Final word
+I hope that this READme file,the python files and other documentation included in the project repository demonstrates my project management skills and also demonstrates my abilities with python programming.
 
+## End
