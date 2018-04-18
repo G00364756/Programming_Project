@@ -165,8 +165,7 @@ Please find screen captures of the outputs of all executed python code as descri
 
 list.py results in a specified column of the iris.csv data file being outputted as a list. Please see the following screencaptures for demonstration of the result:-
 
-max_iris.py results:
-
+### max_iris.py results:
 
 Attribute     | Setosa        | Versicolor    | Verginica     |
 ------------- | ------------- |-------------- | ------------- |
@@ -175,41 +174,41 @@ Sepal_width   | 4.4cm         | 3.4cm         | 3.8cm         |
 Petal_length  | 1.9cm         | 5.1cm         | 6.9cm         |
 Petal_width   | 0.6cm         | 1.8cm         | 2.5cm         |
 
+### min_iris.py results:
 
-*Sepal_length - 
-    *The maximum sepal length for Iris Setosa is 5.8cm
-    *The maximum sepal length for Iris Versicolor is 7.0cm
-    *The maximum sepal length for Iris Verginica is 7.9cm
-*Sepal_width - 
-    *The maximum sepal length for Iris Setosa is 5.8cm
-    *The maximum sepal length for Iris Versicolor is 7.0cm
-    *The maximum sepal length for Iris Verginica is 7.9cm
-*Petal_Height - 
-*Petal_Width - 
+Attribute     | Setosa        | Versicolor    | Verginica     |
+------------- | ------------- |-------------- | ------------- |
+Sepal_length  | 4.3cm         | 4.9cm         | 4.9cm         |
+Sepal_width   | 2.3cm         | 2.0cm         | 2.2cm         |
+Petal_length  | 1.0cm         | 3.0cm         | 4.5cm         |
+Petal_width   | 0.1cm         | 1.0cm         | 1.4cm         |
 
-*min_iris.py results:
-*Sepal_length - 
-*Sepal_width - 
-*Petal_Height - 
-*Petal_Width - 
+### mean.py results:
 
-mean.py results:
-Sepal_length - 
-Sepal_width - 
-Petal_Height - 
-Petal_Width - 
+Attribute     | Setosa        | Versicolor    | Verginica     |
+------------- | ------------- |-------------- | ------------- |
+Sepal_length  | 5.0cm         | 6.0cm         | 6.6cm         |
+Sepal_width   | 3.4cm         | 2.8cm         | 3.0cm         |
+Petal_length  | 1.5cm         | 4.3cm         | 5.6cm         |
+Petal_width   | 0.3cm         | 1.3cm         | 2.0cm         |
 
-mode.py results:
-Sepal_length - 
-Sepal_width - 
-Petal_Height - 
-Petal_Width - 
+### mode.py results:
 
-stddev.py results:
-Sepal_length - 
-Sepal_width - 
-Petal_Height - 
-Petal_Width - 
+Attribute     | Setosa        | Versicolor    | Verginica     |
+------------- | ------------- |-------------- | ------------- |
+Sepal_length  | 5.1cm         | 5.8cm         | 6.5cm         |
+Sepal_width   | 3.4cm         | 2.6cm         | 3.1cm         |
+Petal_length  | 1.4cm         | 4.3cm         | 5.5cm         |
+Petal_width   | 0.5cm         | 1.4cm         | 2.1cm         |
+
+### stddev.py results:
+
+Attribute     | Setosa        | Versicolor    | Verginica     |
+------------- | ------------- |-------------- | ------------- |
+Sepal_length  | 0.4cm         | 0.5cm         | 0.6cm         |
+Sepal_width   | 0.4cm         | 0.3cm         | 0.3cm         |
+Petal_length  | 0.2cm         | 0.5cm         | 0.5cm         |
+Petal_width   | 0.1cm         | 0.2cm         | 0.3cm         |
 
 
 

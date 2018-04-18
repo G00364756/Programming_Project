@@ -6,6 +6,8 @@
 # Identify the minimum value of each of the attributes for 
 # each class and compare the results.
 
+# Results in a bar chart of the minimum value of a user selected attribute for each Iris Class.
+
 def plotHisto(x):
 
     def splitSetosa(x):
@@ -73,28 +75,30 @@ def plotHisto(x):
 
 
     def minVersicolorvalue(x):
+        """Returns the minimum value for an attribute that belongs to the Versicolor class e.g. Min sepal length for the versicolor class is 3.1cm (Example not real value)"""
         Minnie = []
         minimumvalue = 0
         if x > 3: 
-            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
+            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Versicolor sepal length\n 1 = Versicolor sepal width\n 2 = Versicolor petal length\n 3 = Versicolor petal width")
             return(text)
         elif x>=0 or x<=3:
             for m in range(len(splitVersicolor(0))):
                 Minnie.append(splitVersicolor(0)[m][x])
-            minimumvalue = float(max(Minnie))
+            minimumvalue = float(min(Minnie))
             return(minimumvalue)
 
 
     def minVirginicavalue(x):
+        """Returns the minimum value for an attribute that belongs to the Virinica class e.g. Min sepal length for the virginica class is 3.1cm (Example not real value)"""
         Pluto = []
         minimumvalue = 0
         if x > 3: 
-            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
+            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Virginica sepal length\n 1 = Virginica sepal width\n 2 = Virginica petal length\n 3 = Virginica petal width")
             return(text)
         elif x>=0 or x<=3:
             for m in range(len(splitVirginica(0))):
                     Pluto.append(splitVirginica(0)[m][x])
-            minimumvalue = float(max(Pluto))
+            minimumvalue = float(min(Pluto))
             return(minimumvalue)
 
 
