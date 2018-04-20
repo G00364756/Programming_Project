@@ -225,5 +225,14 @@ Petal_width   | 0.1cm         | 0.2cm         | 0.3cm         |
 
 ## Summary of investigations
 
+Max.py results show that some samples of the Iris Verginica class had the largest values for the attributes in the data set.
+
+Min.py results show that the Setosa class had the smallest values for the attributes in the data set apart from the sepal width. A Versicolor sample had the smallest sepal width in the data set.
+
+Mean.py results show what the values of the attributes are for each class on average. The Verginica class has the largest attributes for the data set on average, apart from the sepal width. On average the Setosa class has largest sepal width.
+
+Mode.py results show the estimated most common values for each attribute in each class. For instance if a person were to wonder what the most likely sepal length of an Iris Verginica would be they could use the estimated mode table above and see that the most likely sepal length for an iris Viriginica is a value near to 6.5cm.
+
+Stnddev.py results show that the overall variance in the attributes for each Iris class is between 0.1cm and 0.5cm. A low variance is better in this instance as we are trying to determine the most common values (mode) and the average values (mean) etc. So if our variance is low in the sample set it means that we can be more confident in the conclusions we have drawn from the results.
 
 ## End

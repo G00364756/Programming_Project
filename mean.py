@@ -12,7 +12,7 @@
 def plotMean(x):
 
     def splitSetosa(x):
-        """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
+        """Splits the original iris dataset into a list containing only Iris Setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Setosa]...[5.0,3.3,1.4,0.2,Iris-Setosa]]"""
         Dataset=[]
         Setosa=[]
         with open("iris.csv") as f:
@@ -28,7 +28,7 @@ def plotMean(x):
 
 
     def splitVersicolor(x):
-        """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
+        """Splits the original Iris dataset into a list containing only Iris Versicolor class with all the attributes i.e. Versicolor = [[5.1,3.5,1.4,0.2,Iris-Versiolor]...[5.0,3.3,1.4,0.2,Iris-Versicolor]]"""
         Dataset=[]
         Versicolor=[]
         with open("iris.csv") as f:
@@ -45,7 +45,7 @@ def plotMean(x):
 
 
     def splitVirginica(x):
-        """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
+        """Splits the original Iris dataset into a list containing only Iris Virginica class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Virginica]...[5.0,3.3,1.4,0.2,Iris-Virginica]]"""
         Dataset=[]
         Virginica=[]
         with open("iris.csv") as f:
@@ -79,7 +79,7 @@ def plotMean(x):
         Minnie = []
         meanvalue = 0
         if x > 3: 
-            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
+            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Versicolor sepal length\n 1 = Versicolor sepal width\n 2 = Versicolor petal length\n 3 = Versicolor petal width")
             return(text)
         elif x>=0 or x<=3:
             for m in range(len(splitVersicolor(0))):
@@ -92,7 +92,7 @@ def plotMean(x):
         Pluto = []
         meanvalue = 0
         if x > 3: 
-            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
+            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Virginica sepal length\n 1 = Virginica sepal width\n 2 = Virginica petal length\n 3 = Virginica petal width")
             return(text)
         elif x>=0 or x<=3:
             for m in range(len(splitVirginica(0))):

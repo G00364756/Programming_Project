@@ -9,7 +9,7 @@
 # "rstrip" to get rid of "\n" appearing in string = https://stackoverflow.com/questions/38855670/how-to-append-a-string-into-a-list-without-its-new-line-n-in-python-3?rq=1
 def split(x):
     """Takes the dataset and splits the specified column into a list"""
-    with open("Data_sets/iris.csv") as f:#Open the csv file which will now be called "f"
+    with open("iris.csv") as f:#Open the csv file which will now be called "f"
             attribute=[]
             feature=[]
             for line in f:
@@ -42,4 +42,4 @@ def split(x):
                 return(iris_class)
             else:
                 return("No dice! This data set contains coulmn 0 to 4, try a number between 0 and 4")
-print((split(4)))
+print(split(int(input("0 = Sepal Length,\n1 = Sepal Width,\n2 = Petal Length,\n3 = Petal Width,\n4 = Iris Class,\nEnter the number for the column you wish to split into a list:"))))

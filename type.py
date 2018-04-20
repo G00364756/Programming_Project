@@ -11,7 +11,7 @@ Ace=[]
 King=[]
 Queen=[]
 Jack=[]
-with open("Data_sets/iris.csv") as f:
+with open("iris.csv") as f:
     for line in f:  
         Ace.append(line.split(","))
     for x in range(len(Ace)):
