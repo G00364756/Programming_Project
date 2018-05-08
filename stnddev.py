@@ -7,11 +7,11 @@
 # Below code adapted from following link = https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/
 # Created formulas in tryit.py and using them in iris.py to create histograms
 
-# Creates a Histogram for the mean value for Sepal Length, Sepal Width, Petal Length and Petal Width for each of the Iris classes
+# Creates a Histogram for the standard deviation for Sepal Length, Sepal Width, Petal Length and Petal Width for each of the Iris classes
 
 def plotStndDev(x):
 
-    def splitSetosa(x):
+    def splitSetosa(x): # Same as code in max_iris.py
         """Splits the original Iris dataset into a list containing only Iris Setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Setosa]...[5.0,3.3,1.4,0.2,Iris-Setosa]]"""
         Dataset=[]
         Setosa=[]
@@ -27,7 +27,7 @@ def plotStndDev(x):
             return(Setosa)
 
 
-    def splitVersicolor(x):
+    def splitVersicolor(x): # Same as code in max_iris.py
         """Splits the original Iris dataset into a list containing only iris Versicolor class with all the attributes i.e. Versicolor = [[5.1,3.5,1.4,0.2,Iris-Versicolor]...[5.0,3.3,1.4,0.2,Iris-Versicolor]]"""
         Dataset=[]
         Versicolor=[]
@@ -44,7 +44,7 @@ def plotStndDev(x):
             return(Versicolor)
 
 
-    def splitVirginica(x):
+    def splitVirginica(x): # Same as code in max_iris.py
         """Splits the original Iris dataset into a list containing only Iris Virginica class with all the attributes i.e. Virginica = [[5.1,3.5,1.4,0.2,Iris-Virginica]...[5.0,3.3,1.4,0.2,Iris-Virginica]]"""
         Dataset=[]
         Virginica=[]
@@ -62,7 +62,7 @@ def plotStndDev(x):
     #IMPORTANT NOTE: The below definitions are reliant on the above definitions.
     def sdevSetosavalue(x):
         """Returns the maximum value for an attribute that belongs to the Setosa class i.e. Max sepal length for the setosa class is 5.8cm"""
-        #Change the value of x to change the attribute you want to find the max of
+        # Change the value of x to change the attribute you want to find the standard deviation of
         import math
         Mickey = []
         mean = 0
@@ -74,17 +74,18 @@ def plotStndDev(x):
                 Mickey.append(float(splitSetosa(0)[m][x]))
                 newrange = [] # list of values minus mean
                 sqrtrange = [] # list to be square rooted
-                mean = ((sum(Mickey))/(len(Mickey)))
-                for l in Mickey:
-                    newrange.append(l - mean)
+                mean = ((sum(Mickey))/(len(Mickey))) # mean value formula for the list Mickey
+                for l in Mickey: # formula to determine the standard deviation created from mathematics found during the research part of the project...
+                    newrange.append(l - mean) 
                 for t in newrange:
                     sqrtrange.append(t**2)
                 value = ((sum(sqrtrange))/(len(Mickey)))
                 ans = math.sqrt(value)
-            return(ans)
+            return(ans) # ans is the standard deviation of the Setosa iris class for the user specified value
 
 
     def sdevVersicolorvalue(x):
+        # Change the value of x to change the attribute you want to find the standard deviation of
         import math
         Minnie = []
         mean = 0
@@ -96,18 +97,19 @@ def plotStndDev(x):
                 Minnie.append(float(splitVersicolor(0)[m][x]))
                 newrange = [] # list of values minus mean
                 sqrtrange = [] # list to be square rooted
-                mean = ((sum(Minnie))/(len(Minnie)))
-                for l in Minnie:
+                mean = ((sum(Minnie))/(len(Minnie))) # mean value formula for the list Minnie
+                for l in Minnie: # formula to determine the standard deviation created from mathematics found during the research part of the project...
                     newrange.append(l - mean)
                 for t in newrange:
                     sqrtrange.append(t**2)
                 value = ((sum(sqrtrange))/(len(Minnie)))
                 ans = math.sqrt(value)
-            return(ans)
+            return(ans) # ans is the standard deviation of the Versicolor iris class for the user specified value
 
 
 
     def sdevVirginicavalue(x):
+        # Change the value of x to change the attribute you want to find the standard deviation of
         import math
         Pluto = []
         mean = 0
@@ -119,23 +121,23 @@ def plotStndDev(x):
                 Pluto.append(float(splitVirginica(0)[m][x]))
                 newrange = [] # list of values minus mean
                 sqrtrange = [] # list to be square rooted
-                mean = ((sum(Pluto))/(len(Pluto)))
-                for l in Pluto:
+                mean = ((sum(Pluto))/(len(Pluto)))  # mean value formula for the list Pluto
+                for l in Pluto: # formula to determine the standard deviation created from mathematics found during the research part of the project...
                     newrange.append(l - mean)
                 for t in newrange:
                     sqrtrange.append(t**2)
                 value = ((sum(sqrtrange))/(len(Pluto)))
                 ans = math.sqrt(value)
-            return(ans)
+            return(ans) # ans is the standard deviation of the Virginica iris class for the user specified value
 
 
 
 
-    x1 = (sdevSetosavalue(x))
-    x2 = (sdevVersicolorvalue(x))
-    x3 = (sdevVirginicavalue(x))
+    x1 = (sdevSetosavalue(x)) # set x1 to the value for sdevSetosavalue(x)
+    x2 = (sdevVersicolorvalue(x)) # set x2 to the value for sdevVersicolorvalue(x)
+    x3 = (sdevVirginicavalue(x)) # set x3 to the value for sdevVirginicavalue(x)
 
-    import matplotlib.pyplot as plt
+    import matplotlib.pyplot as plt # import library for plotting graphs
     
     # x-coordinates of left sides of bars 
     left = [1, 2, 3]

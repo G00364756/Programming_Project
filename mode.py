@@ -11,7 +11,7 @@
 
 def Plotmode(x):
 
-    def splitSetosa(x):
+    def splitSetosa(x): # Same as code in max_iris.py
         """Splits the original iris dataset into a list containing only Iris Setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Setosa]...[5.0,3.3,1.4,0.2,Iris-Setosa]]"""
         Dataset=[]
         Setosa=[]
@@ -26,7 +26,7 @@ def Plotmode(x):
                         continue
             return(Setosa)
 
-    def splitVersicolor(x):
+    def splitVersicolor(x): # Same as code in max_iris.py
         """Splits the original Iris dataset into a list containing only Iris Versicolor class with all the attributes i.e. Versicolor = [[5.1,3.5,1.4,0.2,Iris-Versiolor]...[5.0,3.3,1.4,0.2,Iris-Versicolor]]"""
         Dataset=[]
         Versicolor=[]
@@ -43,7 +43,7 @@ def Plotmode(x):
             return(Versicolor)
 
 
-    def splitVirginica(x):
+    def splitVirginica(x): # Same as code in max_iris.py
         """Splits the original Iris dataset into a list containing only Iris Virginica class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Virginica]...[5.0,3.3,1.4,0.2,Iris-Virginica]]"""
         Dataset=[]
         Virginica=[]
@@ -60,14 +60,14 @@ def Plotmode(x):
 
     def modeSetosavalue(x):
         """return the estimated mode of the data for a particular attribute"""
-        Mickey = []
-        if x > 3: 
-            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
-            return(text)
-        elif x>=0 or x<=3:
-            for m in range(len(splitSetosa(0))):
-                Mickey.append(float(splitSetosa(0)[m][x]))
-        R1 = []
+        Mickey = [] # creates list Mickey
+        if x > 3 or x < 0: # Only allows user to pick a number from 0 to 3
+            text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width") # text to be included if user picks a number outside 0 to 3
+            return(text) # return the text if user picks a number outside 0 to 3
+        elif x>=0 or x<=3: # if 0 to 3 is selected by the user do the following...
+            for m in range(len(splitSetosa(0))): 
+                Mickey.append(float(splitSetosa(0)[m][x])) # Append Mickey with the values in splitSetosa specified by the user and convert them to the float type
+        R1 = [] # Create 8 different lists R1 to R8
         R2 = []
         R3 = []
         R4 = []
@@ -75,7 +75,7 @@ def Plotmode(x):
         R6 = []
         R7 = []
         R8 = []
-        G1 = [float(n/10) for n in range(0, 10,1)] # list of values minus mean
+        G1 = [float(n/10) for n in range(0, 10,1)] # Create list G1 to G8 that specifies the groups i.e. G1 = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
         G2 = [float(n/10) for n in range(10, 20,1)]
         G3 = [float(n/10) for n in range(20, 30,1)]
         G4 = [float(n/10) for n in range(30, 40,1)]
@@ -83,10 +83,10 @@ def Plotmode(x):
         G6 = [float(n/10) for n in range(50, 60,1)]
         G7 = [float(n/10) for n in range(60, 70,1)]
         G8 = [float(n/10) for n in range(70, 80,1)]
-        for m in G1:
-            for i in Mickey:
-                if m == i:
-                    R1.append(i)
+        for m in G1: # for all the values in G1
+            for i in Mickey: # and for all the values in Mickey
+                if m == i: # if a value of G1 is equal to one of the values in Mickey do the following...
+                    R1.append(i) # append the list R1 with the value of i that has been identified as equal
         for m in G2:
             for i in Mickey:
                 if m == i:
@@ -116,7 +116,7 @@ def Plotmode(x):
                 if m == i:
                     R8.append(i)
 
-        TupleG1 = len(R1)
+        TupleG1 = len(R1) # Create a variable that is equal to the length of the R1 list, and so on...
         TupleG2 = len(R2)
         TupleG3 = len(R3)
         TupleG4 = len(R4)
@@ -124,10 +124,10 @@ def Plotmode(x):
         TupleG6 = len(R6)
         TupleG7 = len(R7)
         TupleG8 = len(R8)
-        Groupings = [TupleG1,TupleG2,TupleG3,TupleG4,TupleG5,TupleG6,TupleG7,TupleG8]
-        mode = max(Groupings)
-        #The below code deals with returning the estimated mode of the data set
-        if mode == TupleG1:
+        Groupings = [TupleG1,TupleG2,TupleG3,TupleG4,TupleG5,TupleG6,TupleG7,TupleG8] # create a list out of the variables created above
+        mode = max(Groupings) # The estimate mode is the group that is the largest within the list Groupings
+        # The below code deals with returning the estimated mode of the data set, this was formulated from mathematics identified in the research part of the project
+        if mode == TupleG1: # if the mode is equal to the 1st value in the list Groupings then do the following...
             fminus1 = 0
             f = len(R1)
             fplus1 = len(R2)
@@ -192,12 +192,12 @@ def Plotmode(x):
             Estmode = ((L +(f-fminus1)/((f-fminus1)+(f-fplus1))))
             return(Estmode)
         else:
-            return("Mode outside the defined groupings!")
+            return("Mode outside the defined groupings!") # if the mode is not within the Groupings then return the text
 
-    def modeVersicolorvalue(x):
+    def modeVersicolorvalue(x): # This code does the exact same as the modeSetosavalue(x) code, except for the Versicolor iris class
         """return the estimated mode of the data for a particular attribute"""
         Mickey = []
-        if x > 3: 
+        if x > 3 or x < 0: 
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
             return(text)
         elif x>=0 or x<=3:
@@ -330,10 +330,10 @@ def Plotmode(x):
         else:
             return("Mode outside the defined groupings!")
 
-    def modeVirginicavalue(x):
+    def modeVirginicavalue(x):  # This code does the exact same as the modeSetosavalue(x) code, except for the Viriginica iris class
         """return the estimated mode of the data for a particular attribute"""
         Mickey = []
-        if x > 3: 
+        if x > 3 or x < 0: 
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
             return(text)
         elif x>=0 or x<=3:
@@ -466,10 +466,10 @@ def Plotmode(x):
         else:
             return("Mode outside the defined groupings!")
 
-    x1 = (modeSetosavalue(x))
-    x2 = (modeVersicolorvalue(x))
-    x3 = (modeVirginicavalue(x))
-    import matplotlib.pyplot as plt
+    x1 = (modeSetosavalue(x)) # set x1 to the value for modeSetosavalue(x)
+    x2 = (modeVersicolorvalue(x)) # set x2 to the value for modeVersicolorvalue(x)
+    x3 = (modeVirginicavalue(x)) # set x3 to the value for modeVirginicavalue(x)
+    import matplotlib.pyplot as plt # import the library to plot graphs
     
     # x-coordinates of left sides of bars 
     left = [1, 2, 3]

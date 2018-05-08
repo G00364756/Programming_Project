@@ -9,9 +9,9 @@
 
 # Creates a Histogram for the mean value for Sepal Length, Sepal Width, Petal Length and Petal Width for each of the Iris classes
 
-def plotMean(x):
+def plotMean(x): # formula which plots the mean of an attribute
 
-    def splitSetosa(x):
+    def splitSetosa(x): # Same code as in the max_iris.py
         """Splits the original iris dataset into a list containing only Iris Setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Setosa]...[5.0,3.3,1.4,0.2,Iris-Setosa]]"""
         Dataset=[]
         Setosa=[]
@@ -27,7 +27,7 @@ def plotMean(x):
             return(Setosa)
 
 
-    def splitVersicolor(x):
+    def splitVersicolor(x): # Same code as in max_iris.py
         """Splits the original Iris dataset into a list containing only Iris Versicolor class with all the attributes i.e. Versicolor = [[5.1,3.5,1.4,0.2,Iris-Versiolor]...[5.0,3.3,1.4,0.2,Iris-Versicolor]]"""
         Dataset=[]
         Versicolor=[]
@@ -44,7 +44,7 @@ def plotMean(x):
             return(Versicolor)
 
 
-    def splitVirginica(x):
+    def splitVirginica(x): # Same code as in max_iris.py
         """Splits the original Iris dataset into a list containing only Iris Virginica class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-Virginica]...[5.0,3.3,1.4,0.2,Iris-Virginica]]"""
         Dataset=[]
         Virginica=[]
@@ -63,16 +63,16 @@ def plotMean(x):
     def meanSetosavalue(x):
         """Returns the maximum value for an attribute that belongs to the Setosa class i.e. Max sepal length for the setosa class is 5.8cm"""
         #Change the value of x to change the attribute you want to find the max of
-        Mickey = []
+        Mickey = [] 
         meanvalue = 0
         if x > 3: 
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
             return(text)
         elif x>=0 or x<=3:
-            for m in range(len(splitSetosa(0))):
-                    Mickey.append(float(splitSetosa(0)[m][x]))
-            meanvalue = (sum(Mickey))/(float(len(Mickey)))
-            return(meanvalue)
+            for m in range(len(splitSetosa(0))): # for the length of the 1st column of the list "splitSetosa" do the following...
+                Mickey.append(float(splitSetosa(0)[m][x])) # append list Mickey with the value of the attribute determined by the user's preference i.e. "x"
+            meanvalue = (sum(Mickey))/(float(len(Mickey))) # give the mean value of the list Mickey
+            return(meanvalue) # return the mean value
 
 
     def meanVersicolorvalue(x):
@@ -82,10 +82,10 @@ def plotMean(x):
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Versicolor sepal length\n 1 = Versicolor sepal width\n 2 = Versicolor petal length\n 3 = Versicolor petal width")
             return(text)
         elif x>=0 or x<=3:
-            for m in range(len(splitVersicolor(0))):
-                Minnie.append(float(splitVersicolor(0)[m][x]))
-            meanvalue = (sum(Minnie))/(float(len(Minnie)))
-            return(meanvalue)
+            for m in range(len(splitVersicolor(0))): # for the length of the 1st column of the list "splitVersicolor" do the following...
+                Minnie.append(float(splitVersicolor(0)[m][x])) # append list Minnie with the value of the attribute determined by the user's preference i.e. "x"
+            meanvalue = (sum(Minnie))/(float(len(Minnie))) # give the mean value of the list Minnie
+            return(meanvalue) # return the mean value
 
 
     def meanVirginicavalue(x):
@@ -95,16 +95,16 @@ def plotMean(x):
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Virginica sepal length\n 1 = Virginica sepal width\n 2 = Virginica petal length\n 3 = Virginica petal width")
             return(text)
         elif x>=0 or x<=3:
-            for m in range(len(splitVirginica(0))):
-                    Pluto.append(float(splitVirginica(0)[m][x]))
-            meanvalue = (sum(Pluto))/(float(len(Pluto)))
-            return(meanvalue)
+            for m in range(len(splitVirginica(0))): # for the length of the 1st column of the list "splitSirginica" do the following...
+                    Pluto.append(float(splitVirginica(0)[m][x])) # append list Pluto with the value of the attribute determined by the user's preference i.e. "x"
+            meanvalue = (sum(Pluto))/(float(len(Pluto))) # give the mean value of the list Pluto
+            return(meanvalue) # return the mean value
 
 
 
-    x1 = (meanSetosavalue(x))
-    x2 = (meanVersicolorvalue(x))
-    x3 = (meanVirginicavalue(x))
+    x1 = (meanSetosavalue(x)) # set x1 at the value for meanSetosavalue(x)
+    x2 = (meanVersicolorvalue(x)) # set x2 at the value for meanVersicolorvalue(x)
+    x3 = (meanVirginicavalue(x)) # set x3 at the value for meanVirginicavalue(x)
 
     import matplotlib.pyplot as plt
     

@@ -5,7 +5,8 @@
 # Link to csv file = https://archive.ics.uci.edu/ml/datasets/iris
 # Adapted from code learned from lectures by Dr. Ian McGlouglin.
 
-#This code splits the data set into the 3 different classes of iris and find the maximum sepal length for each class
+# This code splits the data set into the 3 different classes of iris and find the maximum sepal length for each class
+# This is the first attempt at max_iris.py and does not allow user input, max_iris.py was adapted from this code to allow user input.
 
 def splitSetosa(x):
     """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""

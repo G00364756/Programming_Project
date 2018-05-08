@@ -10,7 +10,7 @@
 
 def plotHisto(x):
 
-    def splitSetosa(x):
+    def splitSetosa(x): # Same code as in max_iris.py
         """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
         Dataset=[]
         Setosa=[]
@@ -26,7 +26,7 @@ def plotHisto(x):
             return(Setosa)
 
 
-    def splitVersicolor(x):
+    def splitVersicolor(x): # Same code as in max_iris.py
         """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
         Dataset=[]
         Versicolor=[]
@@ -43,7 +43,7 @@ def plotHisto(x):
             return(Versicolor)
 
 
-    def splitVirginica(x):
+    def splitVirginica(x): # Same code as in max_iris.py
         """Splits the original iris dataset into a list containing only iris setosa class with all the attributes i.e. Setosa = [[5.1,3.5,1.4,0.2,Iris-setosa]...[5.0,3.3,1.4,0.2,Iris-setosa]]"""
         Dataset=[]
         Virginica=[]
@@ -68,10 +68,10 @@ def plotHisto(x):
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Setosa sepal length\n 1 = Setosa sepal width\n 2 = Setosa petal length\n 3 = Setosa petal width")
             return(text)
         elif x>=0 or x<=3:
-            for m in range(len(splitSetosa(0))):
-                    Mickey.append(splitSetosa(0)[m][x])
-            minimumvalue = float(min(Mickey))
-            return(minimumvalue)
+            for m in range(len(splitSetosa(0))): # for the length of the 1st column of the list "splitSetosa" do the following...
+                    Mickey.append(splitSetosa(0)[m][x]) # append Mickey with the values in splitSetosa specified by the user
+            minimumvalue = float(min(Mickey))   # get the minimum value for the list Pluto and set the value to a float type value
+            return(minimumvalue) # return the value for minimumvalue
 
 
     def minVersicolorvalue(x):
@@ -82,10 +82,10 @@ def plotHisto(x):
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Versicolor sepal length\n 1 = Versicolor sepal width\n 2 = Versicolor petal length\n 3 = Versicolor petal width")
             return(text)
         elif x>=0 or x<=3:
-            for m in range(len(splitVersicolor(0))):
-                Minnie.append(splitVersicolor(0)[m][x])
-            minimumvalue = float(min(Minnie))
-            return(minimumvalue)
+            for m in range(len(splitVersicolor(0))): # for the length of the 1st column of the list "splitVersicolor" do the following...
+                Minnie.append(splitVersicolor(0)[m][x]) # append the list Pluto with the values specified by the user
+            minimumvalue = float(min(Minnie))  # get the minimum value for the list Pluto and set the value to a float type value
+            return(minimumvalue) # return the value for minimumvalue
 
 
     def minVirginicavalue(x):
@@ -96,18 +96,18 @@ def plotHisto(x):
             text =("No dice! Last column in this dataset is a string!\n Please pick a value for x between 0 and 3.\n 0 = Virginica sepal length\n 1 = Virginica sepal width\n 2 = Virginica petal length\n 3 = Virginica petal width")
             return(text)
         elif x>=0 or x<=3:
-            for m in range(len(splitVirginica(0))):
-                    Pluto.append(splitVirginica(0)[m][x])
-            minimumvalue = float(min(Pluto))
-            return(minimumvalue)
+            for m in range(len(splitVirginica(0))): # # for the length of the 1st column of the list "splitVirginica" do the following...
+                    Pluto.append(splitVirginica(0)[m][x]) # append the list Pluto with the values specified by the user
+            minimumvalue = float(min(Pluto)) # get the minimum value for the list Pluto and set the value to a float type value
+            return(minimumvalue) # return the value for minimumvalue
 
 
 
-    x1 = (minSetosavalue(x))
-    x2 = (minVersicolorvalue(x))
-    x3 = (minVirginicavalue(x))
+    x1 = (minSetosavalue(x)) # set x1 to the value for minSetosavalue(x)
+    x2 = (minVersicolorvalue(x)) # set x2 to the value for minVersicolorvalue(x)
+    x3 = (minVirginicavalue(x)) # set x3 to the value for minVirginicavalue(x)
 
-    import matplotlib.pyplot as plt
+    import matplotlib.pyplot as plt # import the library for graphs
     
     # x-coordinates of left sides of bars 
     left = [1, 2, 3]
@@ -142,4 +142,4 @@ def plotHisto(x):
     # function to show the plot
     plt.show()
 
-plotHisto(x = int(input("0 = Sepal Length,\n1 = Sepal Width,\n2 = Petal Length,\n3 = Petal Width,\nEnter the number you wish to plot:")))
+plotHisto(x = int(input("0 = Sepal Length,\n1 = Sepal Width,\n2 = Petal Length,\n3 = Petal Width,\nEnter the number you wish to plot:"))) # initialise the code with user input, when user has specified the value of x run the code in it's entirety to return a bar chart of the attribute for each iris class

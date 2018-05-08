@@ -5,7 +5,8 @@
 # Link to csv file = https://archive.ics.uci.edu/ml/datasets/iris
 # Adapted from code learned from lectures by Dr. Ian McGlouglin.
 
-#This code splits the data set into the 3 different classes of iris and find the maximum sepal length for each class
+# This code splits the data set into the 3 different classes of iris and find the maximum sepal length for each class.
+# It was the first development of the list.py and list.py was adapted from type.py
 
 Ace=[]
 King=[]
